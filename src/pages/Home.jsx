@@ -70,8 +70,12 @@ const Home = () => {
       
         <Navbar />
         <ThemMode/>
-        <TrandingMovie/>
-      
+        {/* <Router>
+          <Routes>
+            <Route path="/" element={<TrandingMovie/>} />
+          </Routes>
+        </Router> */}
+      {/* <TrandingMovie/> */}
         
     </div>
   );
