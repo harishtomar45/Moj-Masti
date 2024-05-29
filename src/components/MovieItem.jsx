@@ -33,6 +33,10 @@ const MovieItem = ({ film }) => {
            {film.plot}
           </p>
 
+          <h1 className="inline-flex items-center text-lg my-4">
+           <span className='font-bold'>Genre : </span> { film.genre[0]}
+          </h1>
+
           <div className="mt-5 flex items-center space-x-2">
             <span className="block text-sm font-semibold">Rating : </span>
             <span className="block   p-1 px-2 text-xs font-medium">

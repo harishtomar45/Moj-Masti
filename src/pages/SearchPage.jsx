@@ -15,7 +15,7 @@ const SearchPage = () => {
         <img
           src={movieImg}
           alt="Laptop"
-          className="aspect-[16/9] w-[350px] rounded-md md:aspect-auto md:h-[100%] lg:h-[100%]"
+          className="aspect-[16/9] w-[350px] rounded-md md:aspect-auto md:h-[100%] h-[100%]"
         />
         <div className="p-4">
           <h1 className="inline-flex items-center text-lg">
@@ -26,7 +26,7 @@ const SearchPage = () => {
         {film.plot}
           </p>
           <h1 className="inline-flex items-center text-lg my-4">
-           <span className='font-bold'>Genre : </span> {film.genre}
+           <span className='font-bold'>Genre : </span> {film.genre[0]}
           </h1>
 
           <div className=" flex items-center space-x-2">

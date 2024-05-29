@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import movieImg from "../assets/poster/imgfox.webp"
 const TrandingItem = ({film}) => {
   const  darkMode  = useSelector(state => state.movies.darkMode)
-  const  { id , poster, title, rating, year, plot } = film;
+  const  { id , poster, title, rating, year, plot, genre } = film;
   
 
   const dispatch = useDispatch();
@@ -35,6 +35,10 @@ const TrandingItem = ({film}) => {
           <p className="mt-3 text-sm text-gray-600">
            {plot}
           </p>
+
+          <h1 className="inline-flex items-center text-lg my-4">
+           <span className='font-bold'>Genre : </span> { genre[0]}
+          </h1>
 
           <div className="mt-5 flex items-center space-x-2">
             <span className="block text-sm font-semibold">Rating : </span>
