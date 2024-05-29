@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react
 import background from "../assets/poster/background-poster.jpg";
 import logo from "../assets/movie-logo.png";
 import Navbar from "../components/Navbar";
+import TrandingMovie from "../pages/TrandingMovie"
 import { useDispatch } from "react-redux";
 import ThemMode from "../components/ThemMode";
 // import { fatchMovie } from "../featurs/movie/filmeService";
@@ -21,7 +22,7 @@ const Home = () => {
     dispatch(search(query))
     console.log(query)
     navigate("/search")
-    // setQuery()
+    setQuery("")
   }
   return (
     <div className="backPoster relative">
@@ -69,6 +70,8 @@ const Home = () => {
       
         <Navbar />
         <ThemMode/>
+        <TrandingMovie/>
+      
         
     </div>
   );
