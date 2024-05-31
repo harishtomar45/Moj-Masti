@@ -26,7 +26,7 @@ const SearchPage = () => {
         {film.plot}
           </p>
           <h1 className="inline-flex items-center text-lg my-4">
-           <span className='font-bold'>Genre : </span> {film.genre[0]}
+           <span className='font-bold'>Genre : </span> {film.genre}
           </h1>
 
           <div className=" flex items-center space-x-2">
