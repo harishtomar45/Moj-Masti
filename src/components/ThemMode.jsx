@@ -7,13 +7,13 @@ const ThemMode = () => {
     const darkMode = useSelector((state) => state.movies.darkMode);
   
     const customStyle = {
-      height: "50px",
-      width: "50px",
+      height: "20px",
+      width: "40px",
       textAlign: "center",
-      borderRadius: "50%",
+      // borderRadius: "50%",
       position: "fixed",
-      right: "30px",
-      bottom: "20px",
+      right: "5px",
+      top: "20px",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
@@ -23,7 +23,7 @@ const ThemMode = () => {
     return (
       <div>
         <button   className={
-            darkMode ? "bg-black text-white shadow" : "bg-white text-black shadow"
+            darkMode ? "bg-white text-black shadow" : "bg-black text-white shadow"
           }
            style={customStyle} onClick={() => dispatch(toggleTheme())}>
           {darkMode ? "Light" : "Dark"}

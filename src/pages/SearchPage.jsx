@@ -9,7 +9,7 @@ const SearchPage = () => {
   return (
     <div>
      {
-        searchfilm.map((film) => 
+        searchfilm?.map((film) => 
             <div className={darkMode ? 'bg-gray-700 p-5' : 'bg-gray-200 p-5'}>
           <div className={darkMode ? "rounded-md p-5 lg:h-[80vh] lg:w-full lg:flex  bg-gray-300 justify-around border-0" : "rounded-md p-5 bg-gray-100 lg:h-[80vh] lg:w-full lg:flex  justify-around border-0"}>
         <img

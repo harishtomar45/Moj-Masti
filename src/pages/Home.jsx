@@ -4,26 +4,26 @@ import background from "../assets/poster/background-poster.jpg";
 import logo from "../assets/movie-logo.png";
 import Navbar from "../components/Navbar";
 import TrandingMovie from "../pages/TrandingMovie"
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import ThemMode from "../components/ThemMode";
 // import { fatchMovie } from "../featurs/movie/filmeService";
-import { search } from "../featurs/movie/filmeSlice";
+// import { search } from "../featurs/movie/filmeSlice";
 
 const Home = () => {
 
 
-  const [query, setQuery] = useState()
-  const dispatch = useDispatch();
-  const navigate = useNavigate()
-  // const { searchfilm } = useSelector((state) => state.moives);
+  // const [query, setQuery] = useState()
+  // const dispatch = useDispatch();
+  // const navigate = useNavigate()
+  // // const { searchfilm } = useSelector((state) => state.moives);
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    dispatch(search(query))
-    console.log(query)
-    navigate("/search")
-    setQuery("")
-  }
+  // const handleSearch = (e) => {
+  //   e.preventDefault();
+  //   dispatch(search(query))
+  //   console.log(query)
+  //   navigate("/search")
+  //   setQuery("")
+  // }
   return (
     <div className="backPoster relative">
       <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-[380px] text-white overflow-hidden">
@@ -49,10 +49,10 @@ const Home = () => {
           </p>
 
 
-          <form className="mb-5" onSubmit={handleSearch} >
+          {/* <form className="mb-5" onSubmit={handleSearch} >
             <input className="rounded border-0 p-3 mx-3 text-black" type="text" placeholder="Search Movie" value={query} onChange={(e) => setQuery(e.target.value)} />
             <button type="submit" class="bg-red-500 text-gray-100 hover:bg-red-400 py-2 px-6 rounded text-lg font-semibold transition duration-300  hover:shadow-lg">search</button>
-          </form>
+          </form> */}
 
         <Link to={"/trending"}>
 
@@ -68,8 +68,9 @@ const Home = () => {
       </div>
 
       
-        <Navbar />
+        {/* <Navbar /> */}
         <ThemMode/>
+        <TrandingMovie/>
                 
     </div>
   );
